@@ -1,3 +1,8 @@
+/* * {
+  margin: 0;
+  padding-inline-start: 0;
+} */
+
 /* Some code help from https://www.w3schools.com/cssref/css3_pr_background.asp */ 
 body{ 
   background: linear-gradient(180deg, indigo, pink, white) no-repeat fixed center; 
@@ -10,6 +15,10 @@ form {
   padding: 20px; 
   font-size: 18px; 
   opacity: 1 !important;
+  display: grid;
+  align-content: center;
+  justify-items: start; 
+  grid-template-columns: 1fr;
 }
 
 label {
@@ -26,11 +35,20 @@ footer {
   padding: 20px; 
 }
 
-#title {
+h1 {
   color: white; 
   opacity: 0.9; 
   text-align: left; 
   padding-left: 90px;
+}
+
+label, input {
+  min-width: 200px; 
+}
+
+input[type="submit"] {
+  font-weight: 700; 
+  width: 200px; 
 }
 
 #description {
@@ -81,27 +99,6 @@ footer {
 	top: 0; 
 	left: 0;
   z-index: -1;
-}
-
-#name {
-  width: 200px; 
-}
-
-#email {
-  width: 200px; 
-}
-
-#number {
-  width: 200px; 
-}
-
-#dropdown {
-  width: 207px; 
-}
-
-#submit {
-  font-weight: 700; 
-  width: 200px; 
 }
 
 #second-link:link {

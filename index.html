@@ -1,57 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
 
 <body>
     <header>
-        <h1 id="title"> Are you also learning through freeCodeCamp? </h1>
-        <p id="description"> If you are unfamiliar with freeCodeCamp, please go check out their website <a
-                id="first-link" href="https://www.freecodecamp.org/learn." target="_blank"> <u>freeCodeCamp.org</u></a>.
+        <h1> Are you also learning through freeCodeCamp? </h1>
+        <p id="description"> If you are unfamiliar with freeCodeCamp, please go check out their website
+            <a id="first-link" href="https://www.freecodecamp.org/learn." target="_blank"> <u>freeCodeCamp.org</u></a>.
         </p>
     </header>
-    <!--  <form id="survey-form"> Form goes here <br>
-      Name <input id="name" required="yes" placeholder="Enter your name"> <br>
-      Email <input id="email" required="yes" placeholder="Enter your Email"> <br>
-      Age (optional) <input id="number" required="no" placeholder="Age"> <br>
-      Test goes here <input id="dropdown" required="yes" placeholder="Select current XXX"> <br>
-      Have you heard of freeCodeCamp before? <input id="radio" required="yes"> -->
-    <div id="parent">
-        <form id="survey-form">
-            <label id="name-label"> Name </label> <br>
-            <input id="name" type="text" required placeholder="Enter your name"> <br>
-            <label id="email-label"> Email </label> <br>
-            <input id="email" type="email" required placeholder="Enter your Email"> <br>
-            <label id="number-label"> Age (optional) </label> <br>
-            <input id="number" type="number" min=10 max=99 placeholder="Age"> <br>
-            <label id="dropdown-label"> Current occupation </label><br>
-            <select id="dropdown" required> <br>
-                <option> Please select...</option>
-                <option value="Student">Student</option>
-                <option value="Worker">Worker</option>
-                <option value="Prefer not to say">Prefer not to say</option>
-                <option value="Other">Other</option>
-            </select> <br> <br>
-            <label id="radio-buttons-label"> Have you heard of freeCodeCamp before? </label> <br>
-            <input type="radio" name="Yes/No" value="Yes"> Yes
-            <input type="radio" name="Yes/No" value="No"> No <br>
-            <label id="checkbox-buttons-label"> What's your favorite programming language? (You may choose more than
-                one) </label> <br>
-            <input type="checkbox" value="HTML"> HTML
-            <input type="checkbox" value="Java"> Java
-            <input type="checkbox" value="C++"> C++
-            <input type="checkbox" value="Python"> Python
-            <input type="checkbox" value="Other"> Other
-            <input type="checkbox" value="Don't have any"> Don't have any <br> <br>
-            <label id="comment-label"> Any comments?</label> <br>
-            <textarea placeholder="Enter your comment here..."></textarea> <br> <br>
-            <input id="submit" type="submit">
-        </form>
-    </div>
+
+    <main>
+        <section id="parent">
+            <form>
+                <label for="name">Name</label>
+                <input type="text" name="name" required placeholder="Enter your name">
+                <label for="email">Email</label>
+                <input type="email" name="email" required placeholder="Enter your Email">
+                <label for="age">Age</label>
+                <input type="number" name="age" min=10 max=99 placeholder="Age">
+                <label for="current occupation">Current occupation</label>
+                <select name="dropdown" required>
+                    <option>Please select...</option>
+                    <option value="Student">Student</option>
+                    <option value="Worker">Worker</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                    <option value="Other">Other</option>
+                </select>
+                <label for="radio">Have you heard of freeCodeCamp before?</label>
+                <input type="radio" name="Yes/No" value="Yes"> Yes
+                <input type="radio" name="Yes/No" value="No"> No
+                <label for="checkbox">What's your favorite programming language? (You may choose more than one)</label>
+                <input type="checkbox" value="HTML"> HTML
+                <input type="checkbox" value="Java"> Java
+                <input type="checkbox" value="C++"> C++
+                <input type="checkbox" value="Python"> Python
+                <input type="checkbox" value="Other"> Other
+                <input type="checkbox" value="Don't have any"> Don't have any
+                <label for="textarea">Any comments?</label>
+                <textarea placeholder="Enter your comment here..."></textarea>
+                <input type="submit">
+            </form>
+        </section>
+    </main>
+
     <footer>
-        This page was created between 2021-07-21 to 2021-08-08 by Linda Andersson for the Build a Survey Form Challange
-        by
-        <a id="second-link" href="https://www.freecodecamp.org/learn" target:="_blank"><u>freeCodeCamp.org</u></a>.
+        <p>
+            This page was created between 2021-07-21 to 2021-08-08 by Linda Andersson for the Build a Survey Form Challange
+            by
+            <a id="second-link" href="https://www.freecodecamp.org/learn" target:="_blank"><u>freeCodeCamp.org</u></a>.
+        </p>
     </footer>
 </body>
 
