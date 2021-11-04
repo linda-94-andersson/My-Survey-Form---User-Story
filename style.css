@@ -1,0 +1,134 @@
+html{
+  
+}
+
+#title {
+  color: white; 
+  opacity: 0.9; 
+  text-align: left; 
+  padding-left: 90px;
+}
+
+#description {
+  color: white; 
+  opacity: 0.7; 
+  text-align: left; 
+  padding-left: 100px; 
+}
+
+#first-link:link {
+  color: white; 
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#first-link:visted {
+  color: darkgray;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#first-link:hover {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#first-link:active {
+  color: darkblue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+body{ /* Some code help from https://www.w3schools.com/cssref/css3_pr_background.asp */ 
+ background: linear-gradient(180deg, indigo, pink, white) no-repeat fixed center; 
+}
+
+form {  
+  background-color: transparant;   
+  width: 850px; 
+  text-align: left; 
+  padding: 20px; 
+  font-size: 18px; 
+  opacity: 1 !important;
+}
+
+#parent{ /* With help from: https://www.designcise.com/web/tutorial/how-to-apply-css-opacity-to-background-color-only*/
+  position: relative;
+}
+
+#parent::after { 
+  content: '';  
+  opacity: 0.4; 
+  background-color: white; 
+  width: 890px; 
+  border: 2px solid orange;
+  box-shadow: 5px 8px 10px grey;
+	height: 100%;
+  position: absolute; 
+	top: 0; 
+	left: 0;
+  z-index: -1;
+}
+
+
+
+
+label {
+  font-weight: 700; 
+}
+
+#name {
+  width: 200px; 
+}
+
+#email {
+  width: 200px; 
+}
+
+#number {
+  width: 200px; 
+}
+
+#dropdown {
+  width: 207px; 
+}
+
+textarea {
+  width: 400px; 
+  height: 100px; 
+}
+
+#submit {
+  font-weight: 700; 
+  width: 200px; 
+}
+
+footer {
+  font-size: small; 
+  padding: 20px; 
+}
+
+#second-link:link {
+  color: black; 
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#second-link:visted {
+  color: darkgray;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#second-link:hover {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#second-link:active {
+  color: darkblue;
+  background-color: transparent;
+  text-decoration: underline;
+}
